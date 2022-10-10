@@ -45,7 +45,7 @@ hr {
     margin-bottom: 25px;
 }
 .registerbutton {
-    background-color: #04AA6D;
+    background-color: dodgerblue;
     color: white;
     padding: 16px 20px;
     margin: 8px 0;
@@ -57,4 +57,21 @@ hr {
 
 .registerbutton:hover {
     opacity: 1;
+}
+
+
+
+
+.map{
+
+    width: 75%;
+    margin: auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.map img{
+    height: auto;
+    min-width: 100%;
 }
