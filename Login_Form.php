@@ -12,28 +12,27 @@
     <nav class="navbar navbar-dark bg-dark">
 
     <div class="btn-group" role="group">
-        <button type="button" class="btn btn-dark" onclick="location.href='Login_Form.html.'">Home</button>
-        <button type="button" class="btn btn-dark" onclick="location.href='Map_Page.html'">Map</button>
-        <button type="button" class="btn btn-dark" onclick="location.href='About_Page.html'">About</button>
+        <button type="button" class="btn btn-dark" onclick="location.href='Login_Form.php'">Login</button>
+        <button type="button" class="btn btn-dark" onclick="location.href='Signup_Form.php'">Sign Up</button>
+        <button type="button" class="btn btn-dark" onclick="location.href='Map_Page.php'">Map</button>
+        <button type="button" class="btn btn-dark" onclick="location.href='About_Page.php'">About</button>
     </div>
 
     </nav>
+    <form action="Login_Form_submit.php" method="post">
     <div class="menu">
-        <h1>Registration</h1>
-        <p>Please fill in this form to create an account.</p>
+        <h1>Login</h1>
         <hr>
         <label for="username"><b>Username</b></label>
         <input type="text" placeholder="Enter Username" name="username" id="username" required>
-
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" id="email" required>
 
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
 
         <hr>
-        <button class="registerbutton">Register</button>
-    </div>
+        <button class="registerbutton" type="submit" name="submit">Login</button>
 
+    </div>
+    </form>
 </body>
 </html>

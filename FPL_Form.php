@@ -12,25 +12,23 @@
 <nav class="navbar navbar-dark bg-dark">
 
     <div class="btn-group" role="group">
-        <button type="button" class="btn btn-dark" onclick="location.href='Login_Form.html.'">Home</button>
-        <button type="button" class="btn btn-dark" onclick="location.href='Map_Page.html'">Map</button>
+        <button type="button" class="btn btn-dark" onclick="location.href='Login_Form.php'">Home</button>
+        <button type="button" class="btn btn-dark" onclick="location.href='Map_Page.php'">Map</button>
+        <div class="dropdown">
+            <button class="dropbtn btn-dark">Flight</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="location.href='Aircraft_List.php'">Aircraft</a>
+                <a href="#" onclick="location.href='FPL_Form.php'">Create Flight Plan</a>
+                <a href="#" onclick="location.href='FPL_List.php'">List of Flight Plans</a>
+            </div>
+        </div>
         <button type="button" class="btn btn-dark" onclick="location.href='About_Page.html'">About</button>
     </div>
 
 </nav>
-<?php
-include "con-flight.inc";
-$sql = "SELECT id, name, surname, login FROM User";
-$result = mysqli_query($pripoj, $sql);
 
-if ($result->num_rows > 0) {
-    // output data of each row
-    while ($row = $result->fetch_assoc()) {
-        echo "id: " . $row["id"] . " - Name: " . $row["name"] . " " . $row["surname"] . " " . $row["login"] . " <br>";
-    }
-}
-?>
 <div class="menu">
+    <form action="FPL_Form_submit.php" method="post">
     <h1>FPL Form</h1>
     <hr>
     <label for="arcid"><b>Aircraft ID</b></label>
@@ -39,21 +37,25 @@ if ($result->num_rows > 0) {
     <label for="acType"><b>Aircraft Type</b></label>
     <input type="text" name="acType" id="acType" required>
 
-    <label for="rule"><b>Flight Rules</b></label>
-    <input type="text" name="rule" id="rule" required>
-
     <label for="adep"><b>ADEP</b></label>
     <input type="text" name="adep" id="adep" required>
 
     <label for="ades"><b>ADES</b></label>
     <input type="text" name="ades" id="ades" required>
 
+    <label for="time"><b>Time</b></label>
+    <input type="text" name="time" id="time" required>
+
+    <label for="dof"><b>Date of Flight</b></label>
+    <input type="text" name="dof" id="dof" required>
+
     <label for="route"><b>Route</b></label>
     <textarea name="route" id="route" rows="5" cols="40">
 
     </textarea>
     <hr>
-    <button class="fplformsubmit">Submit</button>
+    <button class="registerbutton" type="submit" name="submit" >Submit Form</button>
+    </form>
 </div>
 
 </body>

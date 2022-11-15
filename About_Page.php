@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="sem.css">
@@ -12,9 +13,10 @@
 <nav class="navbar navbar-dark bg-dark">
 
   <div class="btn-group" role="group">
-    <button type="button" class="btn btn-dark" onclick="location.href='Login_Form.html'">Home</button>
-    <button type="button" class="btn btn-dark" onclick="location.href='Map_Page.html'">Map</button>
-    <button type="button" class="btn btn-dark" onclick="location.href='About_Page.html'">About</button>
+    <button type="button" class="btn btn-dark" onclick="location.href='Login_Form.php'">Login</button>
+    <button type="button" class="btn btn-dark" onclick="location.href='Signup_Form.php'">Sign Up</button>
+    <button type="button" class="btn btn-dark" onclick="location.href='Map_Page.php'">Map</button>
+    <button type="button" class="btn btn-dark" onclick="location.href='About_Page.php'">About</button>
   </div>
 </nav>
 <div style="background-color:#e5e5e5;padding:15px;text-align:center;">

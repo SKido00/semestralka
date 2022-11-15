@@ -61,8 +61,9 @@ hr {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 75%;
+    width: 100%;
     opacity: 0.9;
+
 }
 
 .registerbutton:hover {
@@ -176,4 +177,9 @@ hr {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
 }

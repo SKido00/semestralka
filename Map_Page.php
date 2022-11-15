@@ -13,17 +13,18 @@
 <nav class="navbar navbar-dark bg-dark">
 
   <div class="btn-group" role="group">
-    <button type="button" class="btn btn-dark" onclick="location.href='Login_Form.html'">Home</button>
-    <button type="button" class="btn btn-dark" onclick="location.href='Map_Page.html'">Map</button>
+    <button type="button" class="btn btn-dark" onclick="location.href='Login_Form.php'">Login</button>
+    <button type="button" class="btn btn-dark" onclick="location.href='Signup_Form.php'">Sign Up</button>
+    <button type="button" class="btn btn-dark" onclick="location.href='Map_Page.php'">Map</button>
     <div class="dropdown">
       <button class="dropbtn btn-dark">Flight</button>
       <div class="dropdown-content">
-        <a href="#" onclick="location.href='Aircraft_Form.php'">Add Plane</a>
+        <a href="#" onclick="location.href='Aircraft_List.php'">Aircraft</a>
         <a href="#" onclick="location.href='FPL_Form.php'">Create Flight Plan</a>
         <a href="#" onclick="location.href='FPL_List.php'">List of Flight Plans</a>
       </div>
     </div>
-    <button type="button" class="btn btn-dark" onclick="location.href='About_Page.html'">About</button>
+    <button type="button" class="btn btn-dark" onclick="location.href='About_Page.php'">About</button>
   </div>
 
 </nav>
