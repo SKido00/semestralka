@@ -22,7 +22,7 @@
                 <a href="#" onclick="location.href='FPL_List.php'">List of Flight Plans</a>
             </div>
         </div>
-        <button type="button" class="btn btn-dark" onclick="location.href='About_Page.html'">About</button>
+        <button type="button" class="btn btn-dark" onclick="location.href='About_Page.php'">About</button>
     </div>
 
 </nav>
